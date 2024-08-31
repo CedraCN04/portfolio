@@ -9,8 +9,18 @@ export const LINKS: NavLinks[] = [
     href: "/",
   },
   {
+    id: "about",
+    title: "Qui suis-je ?",
+    href: "#",
+  },
+  {
     id: "projets",
     title: "Projets",
+    href: "/projects",
+  },
+  {
+    id: "printing",
+    title: "Projets 3D",
     href: "#",
   },
   {
@@ -20,7 +30,7 @@ export const LINKS: NavLinks[] = [
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contactez-moi",
     href: "#",
   },
 ];
