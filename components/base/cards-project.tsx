@@ -11,16 +11,20 @@ import { PROJECTS } from "@/lib/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function CardsProject() {
+  const [hoveredProjectId, setHoveredProjectId] = useState<string | null>(null);
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
       {PROJECTS.map((project) => (
         <Card key={project.id} className="p-4">
           <CardTitle className="text-base">
             <motion.div
-              whileHover={{ scale: 1.1 }}
+              onHoverStart={() => setHoveredProjectId(project.id)}
+              onHoverEnd={() => setHoveredProjectId(null)}
+              whileHover={{ color: "blue" }}
               whileTap={{ scale: 1.1 }}
               transition={{ duration: 0.5 }}
             >
@@ -28,7 +32,17 @@ export default function CardsProject() {
                 href={project.href}
                 className="flex flex-row justify-around items-center"
               >
-                {project.title} <MdOutlineArrowOutward />
+                {project.title}
+                <motion.span
+                  animate={
+                    hoveredProjectId === project.id
+                      ? { x: 5, y: -5 }
+                      : { x: 0, y: 0 }
+                  }
+                  transition={{ duration: 0.5 }}
+                >
+                  <MdOutlineArrowOutward size={20} />
+                </motion.span>
               </Link>
             </motion.div>
           </CardTitle>
