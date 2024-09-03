@@ -1,8 +1,10 @@
+import ProjectContent from "@/components/widgets/project-content";
+
 export default function Projects() {
   return (
-    <div className="flex flex-col items-center justify-center h-dvh">
-      Projects
-    </div>
+    <section className="flex flex-col items-center justify-center h-dvh">
+      <ProjectContent />
+    </section>
   );
 }
 
