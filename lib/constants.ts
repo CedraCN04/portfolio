@@ -14,17 +14,12 @@ export const LINKS: NavLinks[] = [
   {
     id: "about",
     title: "Qui suis-je ?",
-    href: "#",
+    href: "/about",
   },
   {
     id: "projets",
     title: "Projets",
     href: "/projects",
-  },
-  {
-    id: "printing",
-    title: "Projets 3D",
-    href: "#",
   },
   {
     id: "competences",
