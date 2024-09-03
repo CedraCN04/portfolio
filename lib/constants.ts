@@ -1,5 +1,7 @@
 import { AiFillGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
-import { NavLinks, SocialLinks } from "../types/type";
+import { RiNextjsLine, RiTailwindCssLine } from "react-icons/ri";
+import { TbBrandFigma, TbBrandTypescript } from "react-icons/tb";
+import { NavLinks, Project, SocialLinks } from "../types/type";
 
 // Liens barre de navigation
 export const LINKS: NavLinks[] = [
@@ -51,5 +53,18 @@ export const SOCIAL_LINKS: SocialLinks[] = [
     id: "instagram",
     href: "https://www.instagram.com/creanumerik04/",
     icon: AiOutlineInstagram
+  }
+]
+
+// Informations de projets
+export const PROJECTS: Project[] = [
+  {
+    id: "psychologue",
+    title: "Site pour une psychologue",
+    description: "Site vitrine pour une psychologue des Pennes-Mirabeau",
+    image: "/assets/site-delphine.png",
+    alt: "Aperçu du site de Delphine",
+    href:"https://www.ceccoli-delphine.fr/",
+    technologies: [RiNextjsLine, RiTailwindCssLine, TbBrandTypescript, TbBrandFigma]
   }
 ]

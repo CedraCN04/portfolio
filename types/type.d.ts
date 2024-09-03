@@ -13,3 +13,14 @@ export type SocialLinks = {
   href: string,
   icon: IconType,
 }
+
+// Informations de projets
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  alt: string,
+  href: string;
+  technologies: IconType[];
+}
