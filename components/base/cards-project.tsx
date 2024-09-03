@@ -16,7 +16,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.4 } },
+  visible: { opacity: 1, transition: { staggerChildren: 0.6 } },
 };
 
 const cardVariants = {
