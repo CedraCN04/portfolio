@@ -79,8 +79,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "imc",
-    title: "Un calculateur d'IMC en ligne",
-    description: "Une page web qui permet de calculer son Indice de Masse Corporelle.",
+    title: "Une page web de calcul d'IMC en ligne",
+    description: "Une page web qui vous permettra de calculer son Indice de Masse Corporelle.",
     image: "/assets/imc.png",
     alt: "Aperçu du calculateur d'IMC",
     href:"https://imc-calculator.vercel.app/",
