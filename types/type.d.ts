@@ -24,3 +24,10 @@ export type Project = {
   href: string;
   technologies: IconType[];
 }
+
+// Informations de compétences
+export type Skill = {
+  id: string,
+  title: string,
+  rate: number,
+}

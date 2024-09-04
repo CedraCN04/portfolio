@@ -2,7 +2,7 @@ import { AiFillGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons
 import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { RiJavascriptFill, RiNextjsLine, RiSupabaseLine, RiTailwindCssLine } from "react-icons/ri";
 import { TbBrandFigma, TbBrandPrisma, TbBrandTypescript } from "react-icons/tb";
-import { NavLinks, Project, SocialLinks } from "../types/type";
+import { NavLinks, Project, Skill, SocialLinks } from "../types/type";
 
 // Liens barre de navigation
 export const LINKS: NavLinks[] = [
@@ -24,7 +24,7 @@ export const LINKS: NavLinks[] = [
   {
     id: "competences",
     title: "Compétences",
-    href: "#",
+    href: "/skills",
   },
   {
     id: "contact",
@@ -49,6 +49,60 @@ export const SOCIAL_LINKS: SocialLinks[] = [
     id: "instagram",
     href: "https://www.instagram.com/creanumerik04/",
     icon: AiOutlineInstagram
+  }
+]
+
+// Informations de compétences
+export const SKILLS: Skill[] = [
+  {
+    id: "html",
+    title: "HTML5",
+    rate: 8,
+  },
+  {
+    id: "css",
+    title: "CSS3",
+    rate: 7,
+  },
+  {
+    id: "js",
+    title: "JavaScript",
+    rate: 6,
+  },
+  {
+    id: "ts",
+    title: "TypeScript",
+    rate: 6,
+  },
+  {
+    id: "react",
+    title: "React",
+    rate: 7,
+  },
+  {
+    id: "next",
+    title: "Next.js",
+    rate: 6,
+  },
+  {
+    id: "tailwind",
+    title: "Tailwind CSS",
+    rate: 7,
+  },
+  {
+    id: "prisma",
+    title: "Prisma",
+    rate: 5,
+  },
+  {
+    id: "figma",
+    title: "Figma",
+    rate: 6,
+  },
+  {
+    id: "supabase",
+    title: "Supabase",
+    rate: 5,
   }
 ]
 
