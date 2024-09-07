@@ -57,6 +57,10 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  .box {
+    box-shadow: 5px 5px 15px 5px black;
+  }
 }
 
 @layer base {
@@ -67,3 +71,4 @@
     @apply bg-background text-foreground;
   }
 }
+

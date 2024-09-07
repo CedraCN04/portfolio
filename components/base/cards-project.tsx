@@ -16,7 +16,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.6 } },
+  visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
 };
 
 const cardVariants = {
@@ -36,12 +36,15 @@ export default function CardsProject() {
       <AnimatePresence>
         {PROJECTS.map((project) => (
           <motion.div key={project.id} variants={cardVariants}>
-            <Card key={project.id} className="p-4">
+            <Card
+              key={project.id}
+              className="p-4 bg-blue-900 text-white shadow-slate-500 shadow-md border-black"
+            >
               <CardTitle className="text-base">
                 <motion.div
                   onHoverStart={() => setHoveredProjectId(project.id)}
                   onHoverEnd={() => setHoveredProjectId(null)}
-                  whileHover={{ color: "blue" }}
+                  whileHover={{ color: "lightgrey" }}
                 >
                   <Link
                     href={project.href}
@@ -54,9 +57,9 @@ export default function CardsProject() {
                           ? { x: 5, y: -5 }
                           : { x: 0, y: 0 }
                       }
-                      transition={{ duration: 0.5 }}
+                      transition={{ duration: 0.3 }}
                     >
-                      <MdOutlineArrowOutward size={20} />
+                      <MdOutlineArrowOutward size={24} />
                     </motion.span>
                   </Link>
                 </motion.div>
@@ -67,10 +70,10 @@ export default function CardsProject() {
                   alt={project.title}
                   width={400}
                   height={200}
-                  className="object-cover rounded-md"
+                  className="object-cover rounded-md border-gray-200 border"
                 />
               </CardHeader>
-              <CardDescription className="text-sm">
+              <CardDescription className="text-sm text-slate-300">
                 {project.description}
               </CardDescription>
               <CardFooter className="flex flex-col items-center gap-5">
