@@ -80,7 +80,7 @@ export default function CardsProject() {
                 <ul className="flex flex-row items-center justify-center gap-4 w-full mt-6">
                   {project.technologies.map((Icon, index) => (
                     <li key={index}>
-                      <Icon size={25} />
+                      <Icon size={30} />
                     </li>
                   ))}
                 </ul>

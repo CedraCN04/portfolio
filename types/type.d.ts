@@ -24,3 +24,10 @@ export type Project = {
   href: string;
   technologies: IconType[];
 }
+
+// Informations soft-skills
+export type SoftSkill = {
+  id: string;
+  title: string;
+  icon: IconType;
+}
