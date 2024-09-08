@@ -1,8 +1,8 @@
 import { AiFillGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
-import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaBook, FaCss3Alt, FaHtml5, FaSearch, FaUser, FaUsers } from "react-icons/fa";
 import { RiJavascriptFill, RiNextjsLine, RiSupabaseLine, RiTailwindCssLine } from "react-icons/ri";
 import { TbBrandFigma, TbBrandPrisma, TbBrandTypescript } from "react-icons/tb";
-import { NavLinks, Project, SocialLinks } from "../types/type";
+import { NavLinks, Project, SocialLinks, SoftSkill } from "../types/type";
 
 // Liens barre de navigation
 export const LINKS: NavLinks[] = [
@@ -51,8 +51,8 @@ export const SOCIAL_LINKS: SocialLinks[] = [
 export const PROJECTS: Project[] = [
   {
     id: "psychologue",
-    title: "Site vitrine pour un cabinet de psychologie",
-    description: "Site qui présente les services d'un cabinet de psychologie aux Pennes-Mirabeau.",
+    title: "Site vitrine pour une psychologue indépendante",
+    description: "Site qui présente les services d'une psychologue indépendante aux Pennes-Mirabeau.",
     image: "/assets/site-delphine.png",
     alt: "Aperçu du site de Delphine",
     href:"https://www.ceccoli-delphine.fr/",
@@ -84,5 +84,30 @@ export const PROJECTS: Project[] = [
     alt: "Aperçu de l'application Todo",
     href:"https://todolist-guillaume.vercel.app/",
     technologies: [RiNextjsLine, RiTailwindCssLine, TbBrandTypescript, RiSupabaseLine]
+  }
+]
+
+// Informations soft skills
+
+export const SOFTSKILLS: SoftSkill[] = [
+  {
+    id:"problèmes",
+    title: "Résolution de problèmes",
+    icon: FaSearch,
+  },
+  {
+    id: "autonomie",
+    title: "Travail en autonomie",
+    icon: FaUser,
+  },
+  {
+    id: "team-work",
+    title: "Travail en équipe",
+    icon: FaUsers,
+  },
+  {
+    id: "learning",
+    title: "Capacité d'apprentissage",
+    icon: FaBook,
   }
 ]
