@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${inter.className} h-dvh flex flex-col items-start justify-start md:flex-row`}
+        className={`${inter.className} min-h-dvh backgroundImage text-white flex flex-col items-start justify-start md:flex-row`}
       >
         <Navbar />
         <PageTransition>{children}</PageTransition>

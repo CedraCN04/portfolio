@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { PROJECTS } from "@/lib/constants";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, easeOut, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -16,7 +16,10 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.5, easeOut },
+  },
 };
 
 const cardVariants = {
@@ -38,13 +41,13 @@ export default function CardsProject() {
           <motion.div key={project.id} variants={cardVariants}>
             <Card
               key={project.id}
-              className="p-4 bg-blue-900 text-white shadow-slate-500 shadow-md border-black"
+              className="p-4 bg-black text-gray-300 box border-white"
             >
               <CardTitle className="text-base">
                 <motion.div
                   onHoverStart={() => setHoveredProjectId(project.id)}
                   onHoverEnd={() => setHoveredProjectId(null)}
-                  whileHover={{ color: "lightgrey" }}
+                  whileHover={{ color: "white" }}
                 >
                   <Link
                     href={project.href}
@@ -73,7 +76,7 @@ export default function CardsProject() {
                   className="object-cover rounded-md border-gray-200 border"
                 />
               </CardHeader>
-              <CardDescription className="text-sm text-slate-300">
+              <CardDescription className="text-sm text-gray-300">
                 {project.description}
               </CardDescription>
               <CardFooter className="flex flex-col items-center gap-5">

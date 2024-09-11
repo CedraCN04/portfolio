@@ -57,10 +57,14 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
 
-  .box {
-    box-shadow: 5px 5px 15px 5px black;
-  }
+.box {
+  box-shadow: 7px 7px 10px -2px rgb(87, 87, 87);
+}
+
+.backgroundImage {
+  background-image: url("/assets/texture.jpg");
 }
 
 @layer base {

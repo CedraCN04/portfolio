@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen gap-10 my-20">
-      <h2 className="text-xl uppercase md:text-2xl">Qui suis-je ?</h2>
+      <h2 className="text-xl font-bold uppercase md:text-2xl">Qui suis-je ?</h2>
       <Image
         src="/assets/Guillaume.jpeg"
         alt="Photo de Guillaume"

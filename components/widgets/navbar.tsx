@@ -36,11 +36,11 @@ export default function Navbar() {
         <SheetTrigger className="md:hidden">
           <RiMenu4Line size={40} onClick={() => setIsSheetOpen(true)} />
         </SheetTrigger>
-        <SheetContent className="h-dvh flex flex-col items-center justify-center gap-10">
+        <SheetContent className="h-dvh flex flex-col text-black items-center justify-center gap-10">
           <SheetHeader>
             <SheetTitle>
               <Image
-                src="/assets/logo.png"
+                src="/assets/Guillaume.jpeg"
                 alt="Creanumerik04 logo"
                 width={50}
                 height={50}
@@ -56,10 +56,11 @@ export default function Navbar() {
         <ul className="fixed hidden md:flex md:flex-col md:items-center md:justify-center md:gap-10 md:mx-10 md:h-dvh lg:text-xl md:list-none">
           <li>
             <Image
-              src="/assets/logo.png"
+              src="/assets/Guillaume.jpeg"
               alt="Creanumerik04 logo"
-              width={50}
-              height={50}
+              width={75}
+              height={75}
+              className="rounded-md"
             />
           </li>
           {links}
