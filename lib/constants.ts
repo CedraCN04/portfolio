@@ -24,7 +24,7 @@ export const LINKS: NavLinks[] = [
   {
     id: "contact",
     title: "Contactez-moi",
-    href: "#",
+    href: "/contact",
   },
 ];
 
