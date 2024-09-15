@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -22,11 +23,17 @@ export default function Navbar() {
 
   const links = LINKS.map((link) => {
     return (
-      <li key={link.id}>
+      <motion.li
+        key={link.id}
+        whileHover={{
+          scale: 1.15,
+          transition: { duration: 0.5 },
+        }}
+      >
         <Link href={link.href} onClick={handleLinkClick}>
           {link.title}
         </Link>
-      </li>
+      </motion.li>
     );
   });
 
@@ -36,14 +43,15 @@ export default function Navbar() {
         <SheetTrigger className="md:hidden">
           <RiMenu4Line size={40} onClick={() => setIsSheetOpen(true)} />
         </SheetTrigger>
-        <SheetContent className="h-dvh flex flex-col text-black items-center justify-center gap-10">
+        <SheetContent className="h-dvh flex flex-col backgroundImage items-center justify-center gap-10">
           <SheetHeader>
             <SheetTitle>
               <Image
-                src="/assets/Guillaume.jpeg"
-                alt="Creanumerik04 logo"
-                width={50}
-                height={50}
+                src="/assets/xavatario.svg"
+                alt="Avatar Guillaume"
+                width={100}
+                height={100}
+                className="rounded-full"
               />
             </SheetTitle>
           </SheetHeader>
@@ -56,11 +64,11 @@ export default function Navbar() {
         <ul className="fixed hidden md:flex md:flex-col md:items-center md:justify-center md:gap-10 md:mx-10 md:h-dvh lg:text-xl md:list-none">
           <li>
             <Image
-              src="/assets/Guillaume.jpeg"
-              alt="Creanumerik04 logo"
-              width={75}
-              height={75}
-              className="rounded-md"
+              src="/assets/xavatario.svg"
+              alt="Avatar Guillaume"
+              width={100}
+              height={100}
+              className="rounded-full"
             />
           </li>
           {links}

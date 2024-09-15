@@ -41,7 +41,7 @@ export default function CardsProject() {
           <motion.div key={project.id} variants={cardVariants}>
             <Card
               key={project.id}
-              className="p-4 bg-black text-gray-300 box border-white"
+              className="p-4 bg-slate-800 text-gray-500 box border-white"
             >
               <CardTitle className="text-base">
                 <motion.div
@@ -76,7 +76,7 @@ export default function CardsProject() {
                   className="object-cover rounded-md border-gray-200 border"
                 />
               </CardHeader>
-              <CardDescription className="text-sm text-gray-300">
+              <CardDescription className="text-sm text-gray-400">
                 {project.description}
               </CardDescription>
               <CardFooter className="flex flex-col items-center gap-5">
