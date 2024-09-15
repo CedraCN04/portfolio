@@ -10,7 +10,7 @@ export default function About() {
         alt="Photo de Guillaume"
         width={200}
         height={200}
-        className="rounded-xl"
+        className="rounded-xl box"
       />
       <h3 className="uppercase">Mon parcours</h3>
       <p className="w-4/5 md:w-3/5">
@@ -25,7 +25,7 @@ export default function About() {
         m&apos;améliorer. Afin de rester à jour, je suis en veille constante sur
         les dernières évolutions du web.
       </p>
-      <hr className="h-1 border-none w-4/5 bg-slate-400" />
+      <hr className="h-1 border-none w-4/5 bg-gray-500" />
       <article className="flex flex-col items-center justify-center gap-4 md:flex-row text-center md:justify-between w-4/5">
         {SOFTSKILLS.map((skill) => {
           return (
@@ -33,7 +33,7 @@ export default function About() {
               key={skill.id}
               className="flex flex-col items-center justify-center gap-2 w-3/5"
             >
-              <skill.icon size={40} className="text-blue-800" />
+              <skill.icon size={40} className="text-gray-200" />
               <p>{skill.title}</p>
             </div>
           );
