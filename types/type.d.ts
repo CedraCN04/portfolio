@@ -1,21 +1,21 @@
 import { IconType } from "react-icons/lib";
 
 // Liens barre de navigation
-export type NavLinks = {
+export interface NavLinks {
   id: string;
   title: string;
   href: string;
 };
 
 // Liens vers les réseaux sociaux
-export type SocialLinks = {
+export interface SocialLinks {
   id: string,
   href: string,
   icon: IconType,
 }
 
 // Informations de projets
-export type Project = {
+export interface Project {
   id: string;
   title: string;
   description: string;
@@ -26,7 +26,7 @@ export type Project = {
 }
 
 // Informations soft-skills
-export type SoftSkill = {
+export interface SoftSkill {
   id: string;
   title: string;
   icon: IconType;

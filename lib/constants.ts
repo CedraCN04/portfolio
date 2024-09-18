@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "imc",
-    title: "Une page web de calcul d'IMC en ligne",
+    title: "Une page web de calcul d'Indice de Masse Corporelle (IMC) en ligne",
     description: "Une page web qui vous permettra de calculer son Indice de Masse Corporelle.",
     image: "/assets/imc.png",
     alt: "Aperçu du calculateur d'IMC",
