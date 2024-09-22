@@ -1,5 +1,6 @@
 import Navbar from "@/components/widgets/navbar";
 import PageTransition from "@/components/widgets/page-transition";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -22,7 +23,10 @@ export default function RootLayout({
         className={`${inter.className} min-h-dvh backgroundImage text-white flex flex-col items-start justify-start md:flex-row`}
       >
         <Navbar />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          {children}
+          <Analytics />
+        </PageTransition>
       </body>
     </html>
   );
