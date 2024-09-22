@@ -15,7 +15,7 @@ export default function About() {
       <h3 className="uppercase">Mon parcours</h3>
       <p className="w-4/5 md:w-3/5">
         Menuisier pendant 10 ans dans une entreprise industrielle, j&apos;ai
-        décidé de me revonvertir dans le domaine du web. Domaine qui me
+        décidé de me reconvertir dans le domaine du web. Domaine qui me
         passionne depuis longtemps. J&apos;ai donc suivi une formation de 6 mois
         chez Open ClassRoom. Après obtention de mon diplôme, j&apos;ai poursuivi
         mon apprentissage en autodidacte, en réalisant des projets concrets pour

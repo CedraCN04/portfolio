@@ -41,9 +41,9 @@ export default function CardsProject() {
           <motion.div key={project.id} variants={cardVariants}>
             <Card
               key={project.id}
-              className="p-4 bg-slate-800 text-gray-500 box border-white"
+              className="p-4 bg-slate-800 text-gray-500 box border-white h-full"
             >
-              <CardTitle className="text-base">
+              <CardTitle className="text-sm xl:text-base">
                 <motion.div
                   onHoverStart={() => setHoveredProjectId(project.id)}
                   onHoverEnd={() => setHoveredProjectId(null)}
@@ -76,11 +76,11 @@ export default function CardsProject() {
                   className="object-cover rounded-md border-gray-200 border"
                 />
               </CardHeader>
-              <CardDescription className="text-sm text-gray-400">
+              <CardDescription className="text-xs xl:text-sm text-gray-400">
                 {project.description}
               </CardDescription>
-              <CardFooter className="flex flex-col items-center gap-5">
-                <ul className="flex flex-row items-center justify-center gap-4 w-full mt-6">
+              <CardFooter className="w-full flex flex-col items-center gap-5 p-0">
+                <ul className="flex flex-row flex-wrap items-center justify-center gap-4 w-full my-6">
                   {project.technologies.map((Icon, index) => (
                     <li key={index}>
                       <Icon size={30} />

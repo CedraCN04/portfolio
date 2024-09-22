@@ -38,9 +38,9 @@ export default function Navbar() {
   });
 
   return (
-    <nav className="h-10 md:h-dvh md:w-1/5">
+    <nav className="h-10 xl:h-dvh xl:w-1/5">
       <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <SheetTrigger className="md:hidden">
+        <SheetTrigger className="xl:hidden">
           <RiMenu4Line size={40} onClick={() => setIsSheetOpen(true)} />
         </SheetTrigger>
         <SheetContent className="h-dvh flex flex-col backgroundImage items-center justify-center gap-10">
@@ -61,7 +61,7 @@ export default function Navbar() {
         </SheetContent>
       </Sheet>
       <aside>
-        <ul className="fixed hidden md:flex md:flex-col md:items-center md:justify-center md:gap-10 md:mx-10 md:h-dvh lg:text-xl md:list-none">
+        <ul className="fixed hidden xl:flex xl:flex-col xl:items-center xl:justify-center xl:gap-10 xl:mx-10 xl:h-dvh xl:text-xl xl:list-none">
           <li>
             <Image
               src="/assets/xavatario.svg"
